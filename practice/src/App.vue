@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <nav>
+      <router-link to="/" exact>Home</router-link>
+      <router-link to="/product" exact>商品情報</router-link>
+    </nav>
+    <router-view />
   </div>
 </template>
 
@@ -19,5 +22,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.router-link-active {
+  background-color: #00FFFF
+}
+
+li {
+  list-style: none;
 }
 </style>

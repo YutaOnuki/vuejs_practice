@@ -11,4 +11,4 @@ services:
       - .:/app
     tty: true
     stdin_open: false
-    command: /bin/sh
+    command: /bin/sh "cd practice && npm run dev"
